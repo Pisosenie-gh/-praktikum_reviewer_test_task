@@ -107,7 +107,6 @@ class CashCalculator(Calculator):
         # Можно использовать f-строку вместо .format().
         # Можно убрать бэкслеш
         # и использовать f""" {'%0.2f'%cash_remained} """...
-        # Убрать - , т.к cash_remained уже отрицатльное число
         elif cash_remained < 0:
             return 'Денег нет, держись:' \
                    ' твой долг - {0:.2f} {1}'.format(-cash_remained,
